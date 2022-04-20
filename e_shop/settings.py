@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STRIPE_SECRET_KEY = '' #paste your stripe api key
 
 # Application definition
 
@@ -44,7 +45,8 @@ INSTALLED_APPS = [
     'corsheaders', 
     'djoser',
 
-    'product'
+    'product',
+    'order'
 ]
 
 CORS_ALLOWED_ORIGINS = [
